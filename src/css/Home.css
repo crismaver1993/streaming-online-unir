@@ -1,0 +1,48 @@
+.home {
+    padding: 2rem;
+  }
+  
+  .home__title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .home__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* MovieCard.css */
+  .movie-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-card__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .movie-card__info {
+    padding: 1rem;
+  }
+  
+  .movie-card__title {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+  
+  .movie-card__year {
+    color: #555;
+  }
+  
+  .movie-card__link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
