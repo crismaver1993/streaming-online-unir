@@ -8,22 +8,19 @@ const RentalPage = () => {
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
-    // Obtener la información de la película
     fetch(`${BASE_URL}/movies/${id}`)
       .then((response) => response.json())
       .then((data) => setMovie(data.movie));
   }, [id]);
 
   const handleRent = () => {
-    // Simula el alquiler
     const alquilerData = {
       movieId: id,
-      userId: 1,  //  usuario  logueado
+      userId: 1,  // simula usuario  logueado
       fechaAlquiler: new Date().toISOString(),
       fechaExpiracion: new Date(new Date().setDate(new Date().getDate() + 1)).toISOString(),  // 1 día después
     };
 
-    // Guardar en la base de datos
     fetch(`${BASE_URL}/rent`, {
       method: 'POST',
       headers: {
