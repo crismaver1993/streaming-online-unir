@@ -20,9 +20,9 @@ function MovieDetail() {
     }
   }, [id, prevId]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Cargando...</p>;
   if (error) return <p>Error: {error}</p>;
-  if (!loading && !error && !movie) return <p>Movie not found</p>;
+  if (!loading && !error && !movie) return <p>Película no encontrada</p>;
 
   return (
     <div className="movie-detail">
@@ -34,26 +34,31 @@ function MovieDetail() {
         />
         <button 
           className="movie-detail__trailer-button"
-          onClick={() => window.open(movie.trailer, '_blank')}
+          onClick={() => window.open(movie.trailerUrl, '_blank')}
         >
-          Watch Trailer
+          Ver tráiler
         </button>
       </div>
       <div className="movie-detail__info">
         <h1 className="movie-detail__title">{movie.title}</h1>
-        <p className="movie-detail__text"><strong>Synopsis:</strong> {movie.synopsis}</p>
-        <p className="movie-detail__text"><strong>Description:</strong> {movie.description}</p>
-        <h3 className="movie-detail__subtitle">Reviews:</h3>
+        <p className="movie-detail__text"><strong>Sipnosis:</strong> {movie.synopsis}</p>
+        <p className="movie-detail__text"><strong>Descripción:</strong> {movie.description}</p>
+        <h3 className="movie-detail__subtitle">Reseñas:</h3>
         <ul className="movie-detail__reviews">
-          {movie.reviews.map((review, index) => (
-            <li key={index} className="movie-detail__review">
-              <strong>{review.author}</strong>: {review.comment} ({review.rating}/10)
-            </li>
-          ))}
+          {Array.isArray(movie.reviews) && movie.reviews.length > 0 ? (
+            movie.reviews.map((review, index) => (
+              <li key={index} className="movie-detail__review">
+                <strong>{review.author}</strong>: {review.comment} ({review.rating}/10)
+              </li>
+            ))
+          ) : (
+            <li>Sin reseñas</li>
+          )}
         </ul>
       </div>
     </div>
   );
+  
 }
 
 export default MovieDetail;

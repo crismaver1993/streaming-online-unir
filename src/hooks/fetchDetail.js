@@ -15,7 +15,7 @@ function useFetchMovieDetail(url) {
           const result = await response.json();
     
           console.log('Response Data:', result); 
-          setData(result); 
+          setData(result.data); 
         } catch (err) {
           setError(err.message);
         } finally {

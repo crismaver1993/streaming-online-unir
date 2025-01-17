@@ -13,7 +13,7 @@ function useFetchMovies(url) {
           throw new Error('Failed to fetch data');
         }
         const data = await response.json();
-        setMovies(data.movies || []);
+        setMovies(data.data?.movies || []);
       } catch (err) {
         setError(err.message);
       } finally {

@@ -46,3 +46,44 @@
     color: #ffffff;
     text-decoration: none;
   }
+
+  .movie-card__poster {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  movie-card__year, .movie-card__director {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .movie-card__actions {
+    margin-top: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4f98f8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  /* En tu archivo Home.css */
+.home__search input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
