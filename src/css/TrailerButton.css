@@ -1,0 +1,15 @@
+.movie-detail__trailer-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .movie-detail__trailer-button:hover {
+    background-color: #218838;
+  }
+  

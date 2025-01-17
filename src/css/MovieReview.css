@@ -1,0 +1,17 @@
+.movie-reviews {
+    margin-top: 20px;
+  }
+  
+  .movie-reviews h3 {
+    font-size: 20px;
+  }
+  
+  .movie-reviews ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .movie-reviews li {
+    margin-bottom: 10px;
+  }
+  

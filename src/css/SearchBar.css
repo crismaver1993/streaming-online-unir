@@ -1,0 +1,14 @@
+.home__search {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .home__search input {
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  

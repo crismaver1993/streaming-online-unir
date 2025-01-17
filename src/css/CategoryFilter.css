@@ -1,0 +1,13 @@
+.category-filter {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .category-filter select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  

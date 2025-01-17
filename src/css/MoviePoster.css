@@ -1,0 +1,11 @@
+.movie-detail__poster {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .movie-detail__poster-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
