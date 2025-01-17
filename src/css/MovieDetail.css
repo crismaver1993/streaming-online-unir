@@ -1,0 +1,62 @@
+.movie-detail {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.movie-detail__poster-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-detail__poster {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.movie-detail__trailer-button {
+  margin-top: -30px; /* Ajusta la posición para estar más cerca del póster */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.movie-detail__trailer-button:hover {
+  background-color: #0056b3;
+}
+
+.movie-detail__info {
+  max-width: 800px;
+  text-align: left;
+}
+
+.movie-detail__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.movie-detail__text {
+  margin: 0.5rem 0;
+}
+
+.movie-detail__subtitle {
+  margin-top: 1.5rem;
+}
+
+.movie-detail__reviews {
+  list-style: none;
+  padding: 0;
+}
+
+.movie-detail__review {
+  margin: 0.5rem 0;
+}
